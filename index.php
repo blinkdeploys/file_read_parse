@@ -8,7 +8,7 @@ function findMatches($rgx="") {
   $fileLoc = "parse.txt";
   
   // build the pattern, square braces
-  $rgx = "/\[" + $rgx + "\]/";
+  $rgx = "/\[" + $rgx + "\]/i";
 
   // open the file
   $filePtr = fopen($fileLoc, "r") or die("404!");
